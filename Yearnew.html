@@ -50,7 +50,7 @@
 <body>
     
     <div id="counter">
-
+    
         <h2 class="box" id="days"></h2>
         <h2 class="box" id="hours"></h2>
         <h2 class="box" id="minutes"></h2>
@@ -80,7 +80,7 @@
     function showRemaining (){
     now = new Date();
     distance = end - now;
-    distance2 = new Date("01/01/2024 00:00 AM") - now
+    distance2 = new Date("01/01/2023 00:00 AM") - now
     if (distance <= 0 ){
       clearInterval (timer)
       document.getElementById("counter").innerHTML = "<h2>Nothing! It's Over<h2>";
@@ -101,7 +101,7 @@
     
 
 timer = setInterval (showRemaining, 1) 
-CountDownTimer( "01/01/2025 00:00 AM")
+CountDownTimer( "01/01/2024 00:00 AM")
 </script>
 </body>
 </html>
